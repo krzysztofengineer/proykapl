@@ -50,6 +50,7 @@ nav ul li a {
 
 #portfolio {
     margin-bottom: 30px;
+    padding-top: 30px;
 }
 
 #portfolio img {
@@ -61,7 +62,32 @@ nav ul li a {
 }
 
 .portfolio-item {
-    padding: 10px;
+    position: relative;
+    margin: 10px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    opacity: 0;
+    transition: .5s ease;
+}
+
+.overlay .text {
+    color: white;
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.portfolio-item:hover .overlay {
+    opacity: 0.8;
 }
 
 .section {
