@@ -1,19 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500&display=swap');
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: Manrope;
     font-weight: 300;
+    overflow: visible;
 }
 
-#container {
+#wrapper {
     max-width: 1200px;
     margin: 20px auto;
+    margin-top: 70px;
 }
 
 nav {
     display: flex;
     align-items: center;
-    padding: 0 20px 10px;
+    background-color: white;
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding: 30px 30px;
+    width: 100%;
 }
 
 nav img {
@@ -37,6 +48,10 @@ nav ul li a {
     flex-grow: 1;
 }
 
+#portfolio {
+    margin-bottom: 30px;
+}
+
 #portfolio img {
     width: 100%;
 }
@@ -51,10 +66,12 @@ nav ul li a {
 
 .section {
     padding: 20px;
+    margin-bottom: 30px;
 }
 
 .section h2 {
     font-weight: 300;
+    margin-bottom: 10px;
 }
 
 .section ul {
@@ -70,10 +87,15 @@ nav ul li a {
 }
 
 @media (max-width: 800px) {
+    #wrapper {
+        margin-top: 0;
+    }
+
     nav {
         display: block;
         text-align: center;
-        padding: 0;
+        padding: 20px;
+        position: relative;
     }
 
     nav img {

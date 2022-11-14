@@ -5,25 +5,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="main.css" />
     <title>PROYKA</title>
 </head>
 
 <body>
-    <div id="container">
-        <nav>
-            <a href="index.html">
-                <img src="logo.png" srcset="logo.png 1x, logo.png 2x" alt="PROYKA" />
-            </a>
-            <div class="grow"></div>
-            <ul>
-                <li>
-                    <a href="/index.html#portfolio">Portfolio</a>
-                    <a href="/index.html#offer">Oferta</a>
-                    <a href="/index.html#contact">Contact</a>
-                </li>
-            </ul>
-        </nav>
+    <nav>
+        <a href="index.html">
+            <img src="logo.png" srcset="logo.png 1x, logo.png 2x" alt="PROYKA" />
+        </a>
+        <div class="grow"></div>
+        <ul>
+            <li>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#offer">Oferta</a>
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
+    </nav>
+    <div id="wrapper">
         <div id="portfolio">
             <div class="portfolio-row">
                 <div class="portfolio-item">
@@ -62,7 +63,7 @@
                 </div>
             </div>
         </div>
-        <div class="section">
+        <div class="section" id="offer">
             <h2>Oferta</h2>
             <ul>
                 <li>Projekty koncepcyjne, budowlane, wykonawcze</li>
@@ -72,12 +73,11 @@
                 <li>Opracowywanie analiz chłonności tenerów</li>
             </ul>
         </div>
-        <div class="section">
+        <div class="section" id="contact">
             <h2>Kontakt</h2>
             <ul>
                 <li>Architekt Katarzyna Kabacińska</li>
                 <li>biuro@proyka.pl</li>
-                <li>Inwentaryzacje architektoniczne istniejących obiektów kubaturowych</li>
                 <li>+48 503 323 321</li>
                 <li>NIP 7842422432</li>
             </ul>
