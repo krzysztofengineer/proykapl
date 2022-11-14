@@ -21,6 +21,7 @@ nav {
     align-items: center;
     background-color: white;
     position: fixed;
+    z-index: 10;
     left: 0;
     top: 0;
     padding: 30px 30px;
