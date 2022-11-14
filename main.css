@@ -145,8 +145,19 @@ nav ul li a {
 #project {}
 
 #project img {
+    margin: auto;
     margin-bottom: 30px;
     width: 100%;
+    /* max-width: 100%;
+    max-height: calc(100vh - 80px); */
+    height: auto;
+}
+
+.project-max-h {
+    width: unset !important;
+    max-width: 100%;
+    height: auto;
+    max-height: calc(100vh - 80px);
 }
 
 @media (max-width: 800px) {
