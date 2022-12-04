@@ -45,6 +45,10 @@ nav ul li a {
     margin-left: 20px;
 }
 
+.flex {
+    display: flex;
+}
+
 .grow {
     flex-grow: 1;
 }
@@ -160,6 +164,12 @@ nav ul li a {
     max-height: calc(100vh - 80px);
 }
 
+#profile-img {
+    max-width: 400px;
+    height: auto;
+    padding: 10px;
+}
+
 @media (max-width: 800px) {
     #wrapper {
         margin-top: 0;
@@ -186,5 +196,14 @@ nav ul li a {
 
     .portfolio-row {
         display: block;
+    }
+
+    .flex {
+        display: block;
+    }
+
+    #profile-img {
+        margin: 10px auto;
+        width: 100%;
     }
 }
