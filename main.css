@@ -16,6 +16,31 @@ body {
     margin-top: 70px;
 }
 
+#wrapper>blockquote {
+    padding: 50px 10px 10px;
+    text-align: center;
+    font-weight: 200;
+    font-size: 24px;
+    font-style: italic;
+}
+
+#wrapper>blockquote span {
+    quotes: "”";
+    position: relative;
+    display: inline-block;
+}
+
+#wrapper>blockquote span::before {
+    content: open-quote;
+    font-size: 50px;
+    opacity: 0.1;
+    position: absolute;
+    top: -5px;
+    left: -20px;
+    line-height: 24px;
+    font-style: normal;
+}
+
 nav {
     display: flex;
     align-items: center;
@@ -174,6 +199,11 @@ nav ul li a {
 @media (max-width: 800px) {
     #wrapper {
         margin-top: 0;
+    }
+
+    #wrapper>blockquote {
+        padding: 20px 10px 0px;
+        font-size: 20px;
     }
 
     nav {
