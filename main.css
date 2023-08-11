@@ -252,3 +252,31 @@ nav ul li a {
         width: 100%;
     }
 }
+
+.gap {
+    gap: 20px;
+}
+
+.description {
+    padding: 10px 0;
+    text-align: justify;
+}
+
+.description p {
+    margin-bottom: 10px;
+}
+
+.description ul {
+    list-style-type: none;
+}
+
+.description ul li {
+    padding: 0px;
+    border-bottom: none;
+    margin-bottom: 5px;
+}
+
+.description ul li::before {
+    content: "-";
+    margin-right: 10px;
+}
