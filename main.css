@@ -292,3 +292,7 @@ h5 {
     padding-bottom: 0;
     padding-left: 5px;
 }
+
+p {
+    max-width: 100%;
+}
